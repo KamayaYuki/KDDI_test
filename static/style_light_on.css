@@ -1,24 +1,25 @@
 body{
     margin: 0px;
-    /* height: 100vh;
-    widows: 100vw; */
-    background-color: #EBE7CC;
+    /* widows: 100vw; */
+    background-color: #EBE7CC !important;
+    /* text-align: center; */
 }
 
-.wrapper{
-    min-height: 100vh;
-    position: relative;/*←相対位置*/
-    padding-bottom: 120px;/*←footerの高さ*/
-    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+
+#main{
+    height: 100vh;
+    overflow: scroll !important;
+}
+
+.menue{
+  text-align: center;
 }
 
 /* ジグザグ */
 .zigzag {
   position: relative;
-  /* width: 360px; */
-  /* height: 180px; */
   background: #A4A4A4;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+  /*filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));*/
 }
 .zigzag::before, .zigzag::after {
   height: 30px;
@@ -67,7 +68,6 @@ body{
   }
 
 
-
 /* ロゴ */
 #teamb_logo{
   text-align: center;
@@ -97,16 +97,68 @@ body{
     /* 可愛いフォントにする */
     /* height: 200px; */
     /* width: 300; */
-    font-size: 80px;
+    font-size: 100px;
     font-weight: bold;
     text-align: center;
     color: #84460C;
-    margin-bottom: 50px;
+    /* margin: 50px; */
+}
+
+.title_2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #84460C;
+}
+.question_2{
+	color: #84460C;
+	font-size:20px;
+    font-weight: bold;
+}
+
+
+.light_sample{
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+    color: #84460C;
+    font-size:40px;
+    text-align: center;
+    font-weight: bold;
+    border: 10px solid #84460C;
+    /* display: inline-block; */
+    float: left;
+    margin: 20px;
+}
+.output_box{
+    float: right;
+}
+
+.sample_box{
+    /* background-color: pink; */
+    height: 300px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+.question{
+	color: #84460C;
+	font-size:41px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.option{
+	color: #84460C;
+	font-size:35px;
+    font-weight: bold;
+    text-align: left;
+	margin: 50px;
 }
 
 .select_machines{
-    height: 180px;
-    width: 500px;
+    height: 600px;
+    width: 800px;
     border: 10px solid #84460C;
     font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
 
@@ -117,22 +169,36 @@ body{
     border-bottom-right-radius: 20px;
 
     text-align: center;
-    margin:  0 auto;
+    margin:  0 auto; 
     margin-bottom: 30px;
     background-color: #C12E34;
 }
 
-.select_machines a{
-    line-height: 180px;
-    font-size: 40px;
+.select_machines p{
     text-decoration: none;
     font-weight: bold;
     color: #EBE7CC;
 }
 
+.title_2{
+    font-size: 60px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.question_2{
+    font-size: 35px;
+}
+ 
+.inline-block_test {
+    display: inline-block;      /* インラインブロック要素にする */
+    background-color:  rgba(0,0,0,0);;    /* 背景色指定 */
+    padding:  20px;             /* 余白指定 */
+}
+
+
 #teamb_logo{
     text-align: center;
-    padding-top: 100px;
+    padding-top: 40px;
 }
 
 .footer_logo{
@@ -151,3 +217,4 @@ body{
     bottom: 0; /*下に固定*/
     background-color: pink;
 }
+
